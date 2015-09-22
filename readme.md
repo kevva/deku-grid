@@ -1,4 +1,4 @@
-# deku-grid
+# deku-grid [![Build Status](https://travis-ci.org/kevva/deku-grid.svg?branch=master)](https://travis-ci.org/kevva/deku-grid)
 
 > Grid component for deku
 
