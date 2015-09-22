@@ -1,3 +1,4 @@
+import assertElement from 'assert-element';
 import componentMock from 'component-mock';
 import test from 'ava';
 import {Cell, Grid} from './lib';
@@ -9,8 +10,11 @@ test('grid', t => {
 		gutter: true
 	}});
 
-	t.is(el.type, 'div');
-	t.is(el.attributes.class, 'Grid Grid--withGutter Grid--alignCenter');
+	assertElement.isNode(el, 'div');
+	assertElement.hasClass(el, 'Grid');
+	assertElement.hasClass(el, 'Grid--withGutter');
+	assertElement.hasClass(el, 'Grid--alignCenter');
+
 	t.end();
 });
 
@@ -20,7 +24,9 @@ test('cell', t => {
 		size: '1of4'
 	}});
 
-	t.is(el.type, 'div');
-	t.is(el.attributes.class, 'Grid-cell u-size1of4');
+	assertElement.isNode(el, 'div');
+	assertElement.hasClass(el, 'Grid-cell');
+	assertElement.hasClass(el, 'u-size1of4');
+
 	t.end();
 });
