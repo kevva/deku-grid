@@ -47,8 +47,9 @@
       "xo-react"
     ],
     "rules": {
+      "quote-props": 0,
       "react/no-unknown-property": 0,
-      "quote-props": 0
+      "react/prop-types": 0
     }
   }
 }
