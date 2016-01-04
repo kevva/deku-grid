@@ -24,6 +24,7 @@
     "cell",
     "component",
     "deku",
+    "deku-component",
     "grid"
   ],
   "dependencies": {
