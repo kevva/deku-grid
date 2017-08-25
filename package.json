@@ -1,6 +1,6 @@
 {
 	"name": "deku-grid",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"description": "Grid component for deku",
 	"license": "MIT",
 	"repository": "kevva/deku-grid",
@@ -45,7 +45,9 @@
 	"ava": {
 		"babel": "inherit",
 		"failWithoutAssertions": false,
-		"require": ["babel-register"]
+		"require": [
+			"babel-register"
+		]
 	},
 	"babel": {
 		"plugins": [
